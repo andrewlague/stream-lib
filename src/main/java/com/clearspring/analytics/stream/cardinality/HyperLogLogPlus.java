@@ -211,7 +211,7 @@ public class HyperLogLogPlus implements ICardinality, Serializable {
     }
 
     // for constructing a normal mode hllp
-    private HyperLogLogPlus(int p, int sp, RegisterSet registerSet) {
+    public HyperLogLogPlus(int p, int sp, RegisterSet registerSet) {
         this(p, sp, null, registerSet);
     }
 
